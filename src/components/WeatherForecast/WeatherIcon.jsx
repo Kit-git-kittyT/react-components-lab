@@ -1,9 +1,11 @@
-const WeatherIcon= ({props})=>{
+const WeatherIcon= ({weather})=>{
+
+  console.log(weather)
     return (
     <>
         <div className="weather">
         <h2>Weather</h2>
-        <img src={props.img} alt={props.imgAlt} />
+        <img src={weather.img} alt={weather.imgAlt} />
       </div>
     </>
     )

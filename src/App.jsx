@@ -1,7 +1,7 @@
 import './App.css'
 import WeatherForecast from './components/WeatherForecast/WeatherForecast'
-import WeatherIcon from './components/WeatherForecast/WeatherIcon';
-import WeatherData from './components/WeatherForecast/WeatherData';
+// import WeatherIcon from './components/WeatherForecast/WeatherIcon';
+// import WeatherData from './components/WeatherForecast/WeatherData';
 
 
 const weatherForecasts = [
@@ -49,10 +49,10 @@ const App = () => {
     <section>
 
       <ul>
-        {weatherForecasts.map((weatherForecast) => (
+        {weatherForecasts.map((weatherForecast, index) => (
           <WeatherForecast
-            key={weatherForecast.index}
-            weatherForecast = {weatherForecast}
+            key={index}
+            weather = {weatherForecast}
           />
         ))}
       </ul>
